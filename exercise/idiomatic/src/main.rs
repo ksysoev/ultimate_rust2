@@ -8,22 +8,16 @@
 
 // Challenge: Clippy doesn't find *everything*. What else would you change to make this code better?
 
-const pi: f32 = 3.14159265358979323846;
+const PI: f32 = std::f32::consts::PI;
 
 fn count_to_5() -> i32 {
-    let mut foo = 0;
+    let mut count = 0;
 
-    loop {
-        if foo > pi as i32 {
-            if foo > 5 {
-                break;
-            }
-        }
-
-        foo = foo + 1;
+    while count > PI as i32 && count > 5 {
+        count += 1;
     }
 
-    return 5;
+    5
 }
 
 fn main() {
