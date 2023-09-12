@@ -17,6 +17,7 @@
 use thiserror::Error;
 
 #[derive(Debug, Error)]
+#[non_exhaustive]
 pub enum DolphinError {
     #[error("The dolphin is hungry")]
     Hungry,
